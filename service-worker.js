@@ -2,7 +2,7 @@
 
 // set names for both precache & runtime cache
 workbox.core.setCacheNameDetails({
-    prefix: 'LeetCode',
+    prefix: 'System Design',
     suffix: 'v1.0',
     precache: 'precache',
     runtime: 'runtime-cache'
