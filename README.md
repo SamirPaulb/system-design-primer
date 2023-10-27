@@ -19,9 +19,9 @@ System design is a broad topic.  There is a **vast amount of resources scattered
 
 This repo is an **organized collection** of resources to help you learn how to build systems at scale.
 
-### Learn from the open source community
+### Learn from the open-source community
 
-This is a continually updated, open source project.
+This is a continually updated, open-source project.
 
 [Contributions](#contributing) are welcome!
 
