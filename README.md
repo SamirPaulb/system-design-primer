@@ -15,7 +15,7 @@
 
 Learning how to design scalable systems will help you become a better engineer.
 
-System design is a broad topic.  There is a **vast amount of resources scattered throughout the web** on system design principles.
+System design is a broad topic.  There are a **vast number of resources scattered throughout the web** on system design principles.
 
 This repo is an **organized collection** of resources to help you learn how to build systems at scale.
 
@@ -275,7 +275,7 @@ You might be asked to do some estimates by hand.  Refer to the [Appendix](#appen
 
 Check out the following links to get a better idea of what to expect:
 
-* [How to ace a systems design interview](https://www.palantir.com/2011/10/how-to-rock-a-systems-design-interview/)
+* [How to ace a systems design interview](https://web.archive.org/web/20210505130322/https://www.palantir.com/2011/10/how-to-rock-a-systems-design-interview/)
 * [The system design interview](http://www.hiredintech.com/system-design)
 * [Intro to Architecture and Systems Design Interviews](https://www.youtube.com/watch?v=ZgdS0EUmn70)
 * [System design template](https://leetcode.com/discuss/career/229177/My-System-Design-Template)
@@ -438,7 +438,7 @@ Generally, you should aim for **maximal throughput** with **acceptable latency**
 <p align="center">
   <img src="images/bgLMI2u.png">
   <br/>
-  <i><a href=http://robertgreiner.com/2014/08/cap-theorem-revisited>Source: CAP theorem revisited</a></i>
+  <i><a href="https://robertgreiner.com/cap-theorem-revisited">Source: CAP theorem revisited</a></i>
 </p>
 
 In a distributed computer system, you can only support two of the following guarantees:
@@ -461,7 +461,7 @@ AP is a good choice if the business needs to allow for [eventual consistency](#e
 
 ### Source(s) and further reading
 
-* [CAP theorem revisited](http://robertgreiner.com/2014/08/cap-theorem-revisited/)
+* [CAP theorem revisited](https://robertgreiner.com/cap-theorem-revisited/)
 * [A plain english introduction to CAP theorem](http://ksat.me/a-plain-english-introduction-to-cap-theorem)
 * [CAP FAQ](https://github.com/henryr/cap-faq)
 * [The CAP theorem](https://www.youtube.com/watch?v=k-Yaq8AHlFA)
@@ -597,8 +597,8 @@ Services such as [CloudFlare](https://www.cloudflare.com/dns/) and [Route 53](ht
     * Prevent traffic from going to servers under maintenance
     * Balance between varying cluster sizes
     * A/B testing
-* [Latency-based](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html#routing-policy-latency)
-* [Geolocation-based](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html#routing-policy-geo)
+* [Latency-based](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-latency.html)
+* [Geolocation-based](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geo.html)
 
 ### Disadvantage(s): DNS
 
@@ -650,7 +650,7 @@ Sites with heavy traffic work well with pull CDNs, as traffic is spread out more
 ### Source(s) and further reading
 
 * [Globally distributed content delivery](https://figshare.com/articles/Globally_distributed_content_delivery/6605972)
-* [The differences between push and pull CDNs](http://www.travelblogadvice.com/technical/the-differences-between-push-and-pull-cdns/)
+* [The differences between push and pull CDNs](https://www.geeksforgeeks.org/system-design/pull-cdn-vs-push-cdn/)
 * [Wikipedia](https://en.wikipedia.org/wiki/Content_delivery_network)
 
 ## Load balancer
@@ -688,7 +688,7 @@ Load balancers can route traffic based on various metrics, including:
 
 ### Layer 4 load balancing
 
-Layer 4 load balancers look at info at the [transport layer](#communication) to decide how to distribute requests.  Generally, this involves the source, destination IP addresses, and ports in the header, but not the contents of the packet.  Layer 4 load balancers forward network packets to and from the upstream server, performing [Network Address Translation (NAT)](https://www.nginx.com/resources/glossary/layer-4-load-balancing/).
+Layer 4 load balancers look at info at the [transport layer](#communication) to decide how to distribute requests.  Generally, this involves the source, destination IP addresses, and ports in the header, but not the contents of the packet.  Layer 4 load balancers forward network packets to and from the upstream server, performing [Network Address Translation (NAT)](https://web.archive.org/web/20240117134735/https://www.nginx.com/resources/glossary/layer-4-load-balancing/).
 
 ### Layer 7 load balancing
 
@@ -717,7 +717,7 @@ Load balancers can also help with horizontal scaling, improving performance and 
 
 * [NGINX architecture](https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/)
 * [HAProxy architecture guide](http://www.haproxy.org/download/1.2/doc/architecture.txt)
-* [Scalability](http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones)
+* [Scalability](https://web.archive.org/web/20220530193911/https://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones)
 * [Wikipedia](https://en.wikipedia.org/wiki/Load_balancing_(computing))
 * [Layer 4 load balancing](https://www.nginx.com/resources/glossary/layer-4-load-balancing/)
 * [Layer 7 load balancing](https://www.nginx.com/resources/glossary/layer-7-load-balancing/)
@@ -1079,7 +1079,7 @@ Graphs databases offer high performance for data models with complex relationshi
 
 * [Explanation of base terminology](http://stackoverflow.com/questions/3342497/explanation-of-base-terminology)
 * [NoSQL databases a survey and decision guidance](https://medium.com/baqend-blog/nosql-databases-a-survey-and-decision-guidance-ea7823a822d#.wskogqenq)
-* [Scalability](http://www.lecloud.net/post/7994751381/scalability-for-dummies-part-2-database)
+* [Scalability](https://web.archive.org/web/20220602114024/https://www.lecloud.net/post/7994751381/scalability-for-dummies-part-2-database)
 * [Introduction to NoSQL](https://www.youtube.com/watch?v=qI_g07C_Q5I)
 * [NoSQL patterns](http://horicky.blogspot.com/2009/11/nosql-patterns.html)
 
@@ -1313,7 +1313,7 @@ Refresh-ahead can result in reduced latency vs read-through if the cache can acc
 * [Scalable system design patterns](http://horicky.blogspot.com/2010/10/scalable-system-design-patterns.html)
 * [Introduction to architecting systems for scale](http://lethain.com/introduction-to-architecting-systems-for-scale/)
 * [Scalability, availability, stability, patterns](http://www.slideshare.net/jboner/scalability-availability-stability-patterns/)
-* [Scalability](http://www.lecloud.net/post/9246290032/scalability-for-dummies-part-3-cache)
+* [Scalability](https://web.archive.org/web/20230126233752/https://www.lecloud.net/post/9246290032/scalability-for-dummies-part-3-cache)
 * [AWS ElastiCache strategies](http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/Strategies.html)
 * [Wikipedia](https://en.wikipedia.org/wiki/Cache_(computing))
 
@@ -1441,7 +1441,7 @@ Use UDP over TCP when:
 
 #### Source(s) and further reading: TCP and UDP
 
-* [Networking for game programming](http://gafferongames.com/networking-for-game-programmers/udp-vs-tcp/)
+* [Networking for game programming](https://gafferongames.com/post/udp_vs_tcp/)
 * [Key differences between TCP and UDP protocols](http://www.cyberciti.biz/faq/key-differences-between-tcp-and-udp-protocols/)
 * [Difference between TCP and UDP](http://stackoverflow.com/questions/5970383/difference-between-tcp-and-udp)
 * [Transmission control protocol](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)
@@ -1495,7 +1495,7 @@ HTTP APIs following **REST** tend to be used more often for public APIs.
 * RPC clients become tightly coupled to the service implementation.
 * A new API must be defined for every new operation or use case.
 * It can be difficult to debug RPC.
-* You might not be able to leverage existing technologies out of the box.  For example, it might require additional effort to ensure [RPC calls are properly cached](http://etherealbits.com/2012/12/debunking-the-myths-of-rpc-rest/) on caching servers such as [Squid](http://www.squid-cache.org/).
+* You might not be able to leverage existing technologies out of the box.  For example, it might require additional effort to ensure [RPC calls are properly cached](https://web.archive.org/web/20170608193645/http://etherealbits.com/2012/12/debunking-the-myths-of-rpc-rest/) on caching servers such as [Squid](http://www.squid-cache.org/).
 
 ### Representational state transfer (REST)
 
@@ -1547,7 +1547,7 @@ REST is focused on exposing data.  It minimizes the coupling between client/serv
 * [Do you really know why you prefer REST over RPC](https://apihandyman.io/do-you-really-know-why-you-prefer-rest-over-rpc/)
 * [When are RPC-ish approaches more appropriate than REST?](http://programmers.stackexchange.com/a/181186)
 * [REST vs JSON-RPC](http://stackoverflow.com/questions/15056878/rest-vs-json-rpc)
-* [Debunking the myths of RPC and REST](http://etherealbits.com/2012/12/debunking-the-myths-of-rpc-rest/)
+* [Debunking the myths of RPC and REST](https://web.archive.org/web/20170608193645/http://etherealbits.com/2012/12/debunking-the-myths-of-rpc-rest/)
 * [What are the drawbacks of using REST](https://www.quora.com/What-are-the-drawbacks-of-using-RESTful-APIs)
 * [Crack the system design interview](http://www.puncsky.com/blog/2016-02-13-crack-the-system-design-interview)
 * [Thrift](https://code.facebook.com/posts/1468950976659943/)
@@ -1651,7 +1651,7 @@ Handy metrics based on numbers above:
 | Design a search engine like Google | [queue.acm.org](http://queue.acm.org/detail.cfm?id=988407)<br/>[stackexchange.com](http://programmers.stackexchange.com/questions/38324/interview-question-how-would-you-implement-google-search)<br/>[ardendertat.com](http://www.ardendertat.com/2012/01/11/implementing-search-engines/)<br/>[stanford.edu](http://infolab.stanford.edu/~backrub/google.html) |
 | Design a scalable web crawler like Google | [quora.com](https://www.quora.com/How-can-I-build-a-web-crawler-from-scratch) |
 | Design Google docs | [code.google.com](https://code.google.com/p/google-mobwrite/)<br/>[neil.fraser.name](https://neil.fraser.name/writing/sync/) |
-| Design a key-value store like Redis | [slideshare.net](http://www.slideshare.net/dvirsky/introduction-to-redis) |
+| Design a key-value store like Redis | [codecapsule.com](http://codecapsule.com/2012/11/07/ikvs-implementing-a-key-value-store-table-of-contents/)<br/>[allthingsdistributed.com](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf) |
 | Design a cache system like Memcached | [slideshare.net](http://www.slideshare.net/oemebamo/introduction-to-memcached) |
 | Design a recommendation system like Amazon's | [hulu.com](https://web.archive.org/web/20170406065247/http://tech.hulu.com/blog/2011/09/19/recommendation-system.html)<br/>[ijcai13.org](http://ijcai13.org/files/tutorial_slides/td3.pdf) |
 | Design a tinyurl system like Bitly | [n00tc0d3r.blogspot.com](http://n00tc0d3r.blogspot.com/) |
@@ -1773,12 +1773,13 @@ Handy metrics based on numbers above:
 * [Microsoft Engineering](https://engineering.microsoft.com/)
 * [Microsoft Python Engineering](https://blogs.msdn.microsoft.com/pythonengineering/)
 * [Netflix Tech Blog](http://techblog.netflix.com/)
-* [Paypal Developer Blog](https://medium.com/paypal-engineering)
+* [Paypal Developer Blog](https://developer.paypal.com/community/blog/)
 * [Pinterest Engineering Blog](https://medium.com/@Pinterest_Engineering)
 * [Reddit Blog](http://www.redditblog.com/)
 * [Salesforce Engineering Blog](https://developer.salesforce.com/blogs/engineering/)
 * [Slack Engineering Blog](https://slack.engineering/)
 * [Spotify Labs](https://labs.spotify.com/)
+* [Stripe Engineering Blog](https://stripe.com/blog/engineering)
 * [Twilio Engineering Blog](http://www.twilio.com/engineering)
 * [Twitter Engineering](https://blog.twitter.com/engineering/)
 * [Uber Engineering Blog](http://eng.uber.com/)
